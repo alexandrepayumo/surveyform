@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="content">
+      <h1 id="title">Book Club Survey</h1>
+      <p id="description">Tell us a bit about yourself!</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">
+            <p class="pointer">Name</p>
+            <input class="textbox" id="name" type="text" required placeholder="Enter your name...">
+          </label>
+          <label id="email-label">
+            <p class="pointer">Email</p>
+            <input class="textbox" id="email" type="email" required placeholder="Enter your email...">
+          </label>
+          <label id="number-label">
+            <p class="pointer">Age</p>
+            <input class="textbox" id="number" type="number" required min="5" max="120" placeholder="Enter your age...">
+          </label>
+          <label id="dropdown-label">
+            <p class="pointer">What is your favorite book genre?</p>
+            <select class="textbox" id="dropdown">
+              <option value="">Select a genre...</option>
+              <option value="Romance">Romance</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Horror">Horror</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+            <p class="pointer">How much do you love reading?</p>
+            <label class="radiolabel">
+              <input type="radio" name="reading" class="radio" value="love">
+              <p class="radiotext"> Love it!</p>
+            </label>
+            <label class="radiolabel">
+              <input type="radio" name="reading" class="radio" value="ok">
+              <p class="radiotext"> It's alright</p>
+            </label>
+            <label class="radiolabel">
+              <input type="radio" name="reading" class="radio" value="bad">
+              <p class="radiotext"> Meh...</p>
+            </label>
+        </fieldset>
+        <fieldset>
+          <p>What interests you most about book clubs?</p>
+          <label class="checkboxlabel">
+            <input type="checkbox" value="Discuss">
+            <p class="checkboxtext">Discussing readings with others</p>
+          </label>
+          <label class="checkboxlabel">
+            <input type="checkbox" value="Socialize">
+            <p class="checkboxtext">Weekly socialization</p>
+          </label>
+          <label class="checkboxlabel">
+            <input type="checkbox" value="Reading">
+            <p class="checkboxtext">Reading</p>
+          </label>
+          <label class="checkboxlabel">
+            <input type="checkbox" value="Stress">
+            <p class="checkboxtext">Relieving stress</p>
+          </label>
+          <label class="checkboxlabel">
+            <input type="checkbox" value="Trading">
+            <p class="checkboxtext">Trading books</p>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+          <textarea rows="5"></textarea>
+        </fieldset>
+        <input type="submit" name="Submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
